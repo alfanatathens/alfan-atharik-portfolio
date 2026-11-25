@@ -1,22 +1,40 @@
 # Alfan Atharik — Personal Portfolio
 
-Responsive editorial-style one-page portfolio, updated with the supplied 2026 CV and selected personal photographs.
+Responsive editorial one-page portfolio with supplied photographs and scroll-reveal animations.
 
-## Preview locally
-Open `index.html` in a browser. Keep the `assets` folder beside it.
+## Important GitHub upload structure
 
-## Deploy to Vercel
-1. Upload this folder to a GitHub repository.
-2. Import the repository in Vercel.
-3. Framework preset: Other. Build command: leave empty. Output directory: `.`.
-4. Deploy.
+Upload the **contents** of this folder to the root of your GitHub repository. The `assets` directory must be uploaded too.
 
-## Before publishing
-- Review all public-facing role descriptions and dates.
-- Confirm the CV phone number and email may be published on the website.
-- LinkedIn profile is linked: https://www.linkedin.com/in/alfan-atharik-/.
-- Replace `YOUR-DOMAIN.com` in `robots.txt` and `sitemap.xml` after selecting a domain.
-- Add a canonical URL and Open Graph image once the domain is final.
+At the repository root, you should see:
 
-## Notes
-Static HTML/CSS/JS; no build step or backend required. The supplied portrait is used in the hero. Selected supplied photos are used in the work and field-notes sections.
+- `index.html`
+- `styles.css`
+- `script.js`
+- `robots.txt`
+- `sitemap.xml`
+- `assets/` (contains the `.jpg` photos)
+
+Do not upload only the six top-level files. Without `assets/`, the portrait and project photography will return 404.
+
+## Vercel settings
+
+- Framework Preset: Other
+- Root Directory: `./`
+- Build Command: blank
+- Output Directory: `.`
+- Install Command: blank
+
+Connect the GitHub repository to Vercel. Each commit pushed to the production branch (usually `main`) triggers a new deployment.
+
+## Local preview
+
+Open `index.html` in a browser. Keep `assets/` beside it.
+
+## Before public launch
+
+- Confirm public display of the email address and phone number.
+- Replace `YOUR-DOMAIN.com` in `robots.txt` and `sitemap.xml` only if using a custom domain; the current Vercel URL is fine to keep for now.
+- Confirm CV dates and public-facing role descriptions.
+
+Static HTML/CSS/JS. No build command or dependencies required.
