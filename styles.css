@@ -68,3 +68,52 @@ html.motion-ready .reveal.reveal-visible {
     transform: none;
   }
 }
+
+
+/* V4 — improved readability and more generous editorial typography */
+body { font-size: 16px; }
+.nav { font-size: 13px; }
+.announcement { font-size: 10px; }
+.hero .eyebrow, .eyebrow { font-size: 10px; }
+.hero-lede { font-size: 16px; line-height: 1.85; max-width: 510px; }
+.hero-foot { font-size: 9px; }
+.portrait-caption { font-size: 9px; }
+.vertical-note { font-size: 8px; }
+.ticker { font-size: 10px; }
+.section-index { font-size: 10px; }
+.body-large { font-size: 24px; line-height: 1.55; }
+.body-small { font-size: 13px; line-height: 1.9; }
+.expertise-card h3 { font-size: 23px; }
+.expertise-card p,
+.timeline-item p:not(.timeline-org),
+.work-meta p,
+.section-description,
+.education-list p { font-size: 13px; line-height: 1.8; }
+.card-no, .timeline-date, .coming-soon { font-size: 9px; }
+.timeline-item h3 { font-size: 25px; }
+.timeline-org { font-size: 11px !important; }
+.work-image > span { font-size: 9px; }
+.work-meta h3 { font-size: 20px; }
+.insights-note p { font-size: 21px; line-height: 1.55; }
+.contact-copy { font-size: 14px; line-height: 1.9; }
+.contact-details { font-size: 9px; }
+.photo-grid figcaption { font-size: 10px; line-height: 1.6; }
+.footer { font-size: 9px; }
+.button, .text-link { font-size: 12px; }
+.hero-proof span { font-size: 8px; }
+@media(max-width:600px) {
+  .nav { font-size: 14px; }
+  .hero-lede { font-size: 15px; }
+  .section-index { font-size: 9px; }
+  .body-large { font-size: 21px; }
+  .body-small { font-size: 13px; }
+  .expertise-card h3 { font-size: 21px; }
+  .expertise-card p,
+  .timeline-item p:not(.timeline-org),
+  .work-meta p,
+  .section-description,
+  .education-list p { font-size: 12px; }
+  .timeline-item h3 { font-size: 23px; }
+  .contact-copy { font-size: 13px; }
+  .photo-grid figcaption { font-size: 10px; }
+}
